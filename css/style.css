@@ -119,7 +119,7 @@ label {
     cursor: crosshair;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     label, input, button {
         font-size: 2rem;
     }    
