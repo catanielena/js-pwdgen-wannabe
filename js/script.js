@@ -9,4 +9,13 @@ const booleanClass = "40";
 // 5. Definizione variabile password
 var pdwGen = " " + firstName + lastName + favoriteColor + booleanClass;
 // 6. Concatenazione id--var
-document.getElementById('pwd-gen').innerHTML += pdwGen;
+document.getElementById('pwd-gen').value = pdwGen;
+
+// button--copy
+function myFunction() {
+  var copyText = document.getElementById("pwd-gen");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
